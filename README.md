@@ -7,9 +7,10 @@ This repository includes both backend and frontend code for the assessment.
 To start the backend server, follow these steps:
 
 1. Navigate to the backend directory:`cd Backend`
-2. Install the required Node.js modules:
+2. Creat .env file and add variable given in env-file
+3. Install the required Node.js modules:
    `npm install`
-3. Run the backend server:
+4. Run the backend server:
    `npm run dev`
 This will start the backend server at port 3000.
 
@@ -19,6 +20,7 @@ This will start the backend server at port 3000.
 - Express.js framework
 - Nodemon for continuous build support
 - Morgan library as middleware for logging routes
+- MongoDB as database (used MongoDB Atlas)
 
 ## Frontend
 

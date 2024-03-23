@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:3000"; // Replace with your API base URL
+const API_BASE_URL = "http://localhost:3000"; 
 
 const EmployeeService = {
   getAllEmployees: async () => {
@@ -10,7 +10,9 @@ const EmployeeService = {
     return await axios.get(`${API_BASE_URL}/employee/${empId}`);
   },
   addEmployee: async (employeeData) => {
-    return await axios.post(`${API_BASE_URL}/employee`, employeeData);
+    
+    return await axios.post(`${API_BASE_URL}/employee`, employeeData);     
+  
   },
   updateEmployee: async (empId, employeeData) => {
     return await axios.put(`${API_BASE_URL}/employee/${empId}`, employeeData);

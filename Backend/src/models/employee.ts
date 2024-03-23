@@ -11,7 +11,7 @@ interface Employee extends Document {
 const employeeSchema = new Schema<Employee>({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
+  email: { type: String, required: true },
   phoneNumber: { type: String, required: true },
   gender: { type: String, enum: ["male", "female"], required: true },
 });

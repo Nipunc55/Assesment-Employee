@@ -1,10 +1,12 @@
 // db.ts
 
 import mongoose from "mongoose";
-
+import dotenv from 'dotenv';
+dotenv.config();
 const MONGODB_URI =process.env.DB_URL || ''
 
-if(!MONGODB_URI)throw new Error("please check .env file correctly configured...");
+
+// if(!MONGODB_URI)throw new Error("please check .env file correctly configured...");
 
 
 
