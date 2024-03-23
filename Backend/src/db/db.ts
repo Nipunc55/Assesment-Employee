@@ -2,8 +2,11 @@
 
 import mongoose from "mongoose";
 
-const MONGODB_URI =
-  "mongodb+srv://nipun:0PuAq8Scw8KCCBya@cluster0.1p7nvk2.mongodb.net";
+const MONGODB_URI =process.env.DB_URL || ''
+
+if(!MONGODB_URI)throw new Error("please check .env file correctly configured...");
+
+
 
 const connection = mongoose
   .connect(MONGODB_URI)
