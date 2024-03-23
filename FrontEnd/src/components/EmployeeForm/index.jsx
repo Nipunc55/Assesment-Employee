@@ -43,7 +43,7 @@ const EmployeeForm = ({ employee, handleChange, handleSubmit }) => {
           value={employee.email}
           onChange={handleChange}
           placeholder="Email"
-          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+        //   pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           required
         />
       <div className="error-msg">Invalid email address</div>
