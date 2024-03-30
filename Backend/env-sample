@@ -1,2 +1,2 @@
-DB_URL=mongodb+srv://nipun:0PuAq8Scw8KCCBya@cluster0.1p7nvk2.mongodb.net
+DB_URL=
 PORT=5000
